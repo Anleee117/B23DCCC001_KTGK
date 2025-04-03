@@ -69,52 +69,39 @@ export default [
 		icon: 'QuestionCircleOutlined',
 	},
 
-
-
-
-	// {
-	// 	path: '/service-management/appointment-management',
-	// 	name: 'Appointment',
-	// 	component: '@/components/ServiceManagementComponent/AppointmentScheduler',
-	// 	icon: 'QuestionCircleOutlined',
-	// },
 	{
 		path: "/service-management",
 		name: "ServiceManagement",
-		// component: "./ServiceManagement/ServiceManagement",
 		icon: "QuestionCircleOutlined",
-		"routes": [
+		routes: [
 			{
-				"path": "/service-management/dash-board",
-				"name": "Dash Board",
+				path: "/service-management/dash-board",
+				name: "Dash Board",
 				component: "./ServiceManagement/DashBoard",
 			},
 			{
-				"path": "/service-management/customer-management",
-				"name": "Customer",
+				path: "/service-management/customer-management",
+				name: "Customer",
 				component: './ServiceManagement/ServiceManagementComponent/CustomerManagement',
-
 			},
 			{
-				"path": "/service-management/service-management",
-				"name": "Service",
+				path: "/service-management/service-management",
+				name: "Service",
 				component: './ServiceManagement/ServiceManagementComponent/ServiceManagement',
 			},
 			{
-				"path": "/service-management/employee-management",
-				"name": "Employee",
+				path: "/service-management/employee-management",
+				name: "Employee",
 				component: './ServiceManagement/ServiceManagementComponent/EmployeeManagement',
-
 			},
 			{
-				"path": "/service-management/appointment-management",
-				"name": "Appointment",
-				// component: '@/components/ServiceManagementComponent/AppointmentScheduler',
+				path: "/service-management/appointment-management",
+				name: "Appointment",
 				component: './ServiceManagement/ServiceManagementComponent/AppointmentManagement',
 			},
 			{
-				"path": "/service-management/review-responses",
-				"name": "Review Responses",
+				path: "/service-management/review-responses",
+				name: "Review Responses",
 				component: './ServiceManagement/ServiceManagementComponent/ReviewManagement',
 			},
 		]
@@ -123,55 +110,44 @@ export default [
 	{
 		path: "/diploma-management",
 		name: "DipomaManagement",
-		// component: "./DiplomaManagement/App",
 		icon: "QuestionCircleOutlined",
-		"routes": [
+		routes: [
 			{
-				"path": "/diploma-management/diplomabook-management/",
-				"name": "Diploma Book",
+				path: "/diploma-management/diplomabook-management/",
+				name: "Diploma Book",
 				component: "./DiplomaManagement/DiplomaBook",
-				
 			},
 			{
-				"path": "/diploma-management/diploma-graduation-decision",
-				"name": "Graduation Decision",
+				path: "/diploma-management/diploma-graduation-decision",
+				name: "Graduation Decision",
 				component: "./DiplomaManagement/GraduationDecisionManagement",
-				
 			},
 			{
-				"path": "/diploma-management/diploma-information",
-				"name": "Diploma Information",
+				path: "/diploma-management/diploma-information",
+				name: "Diploma Information",
 				component: "./DiplomaManagement/DiplomaInformationManagement",
 			},
-			
 			{
-				"path": "/diploma-management/diploma-information-management",
-				"name": "Field Template",
+				path: "/diploma-management/diploma-information-management",
+				name: "Field Template",
 				component: "./DiplomaManagement/DiplomaFieldTemplateManagement",
 			},
 			{
-				"path": "/diploma-management/diploma-lookup",
-				"name": "Diploma Lookup",
+				path: "/diploma-management/diploma-lookup",
+				name: "Diploma Lookup",
 				component: "./DiplomaManagement/DiplomaLookup",
 			},
-			
 		]
 	},
 	
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
-
+	// Route đã sửa cho Online Course
+	{
+		path: '/online-course',
+		name: 'OnlineCourse',  // Đổi tên từ 'QuestionBank' thành 'OnlineCourse'
+		component: './OnlineCourse/OnlineCourse',
+		icon: 'BookOutlined', // Thêm icon phù hợp (biểu tượng sách)
+	},
+	
 	{
 		path: '/notification',
 		routes: [
